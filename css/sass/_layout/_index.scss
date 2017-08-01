@@ -1,0 +1,69 @@
+@import "../variables";
+
+.site {
+	padding-top: 150px;
+	margin-bottom: 120px;
+	position: relative;
+	z-index: 50;
+	background: #fff;
+    
+    @media #{$max-mobile} {
+        padding-top: 0;
+    }
+}
+
+#home {
+    @media #{$max-tablet} {
+		h2 {
+			clear: both;
+		}
+	}
+}
+
+
+#contact {
+	text-align: right;
+	padding-bottom: 30px;
+
+	h1 {
+		margin-top: $contact_h1_mt;
+		margin-bottom: $contact_h1_mt/2;
+	}
+    
+    @media #{$max-mobile} {
+        text-align: center;
+
+		h1 {
+			margin-top: 30px;
+		}
+    }
+}
+
+#cv {
+	position: relative;
+
+	img {
+		position: absolute;
+		right: 0;
+	}
+
+	p {
+		@include clearfix;
+	}
+
+	h3 {
+		border-bottom: 1px solid rgba(101, 204, 200, 0.95);
+  		width: 50%;
+  		padding-bottom: 10px;
+  		margin-bottom: 25px;
+		margin-top: 35px;
+	}
+}
+
+#about {
+	font-size: 1.1em;
+}
+
+.project {
+	position: relative;
+}

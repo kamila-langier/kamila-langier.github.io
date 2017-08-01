@@ -1,6 +1,14 @@
-/*
-* Bootstrap files 
-*/
+//
+// Compass
+// --------------------------------------------
+//
+@import 'compass';
+
+
+//
+// Bootstrap files 
+// --------------------------------------------
+//
 
 @import "bootstrap-compass";
 @import "bootstrap-variables";
@@ -11,6 +19,32 @@
 * Layout files 
 */
 
-@import "mixins";
+// General
+// --------------------------------------------
+//
+
+@import "_general/mixins";
+@import "_general/utility-class";
+
+
+// Elements
+// --------------------------------------------
+//
+
+@import "_elements/buttons";
+@import "_elements/images";
+
+//
+// Sections
+// --------------------------------------------
+//
+
 @import "site";
-@import "media";
+
+@import "_sections/header"; 
+@import "_sections/banner"; 
+@import "_sections/footer";
+@import "_layout/index"; 
+
+
+@import "_general/media";

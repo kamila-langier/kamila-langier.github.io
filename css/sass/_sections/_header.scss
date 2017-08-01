@@ -1,27 +1,114 @@
-/*
-* Desktop
-*/
+@import "../variables";
 
-@media screen and (max-width: 1199px) {
+header {
+	padding-top: 10px;
+	font: 300 1.5em $special_font;
+	background-color: $header_bg;
+	color: $header_text_cl;
+	z-index: 100;
+	position: fixed;
+	width: 100%;
+
+	ul {
+		padding: {
+			left: 0;
+			top: 20px;
+			bottom: 37px;
+		}
+		list-style: none;
+
+		li {
+			display: inline-block;
+			margin-right: 20px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			a {
+				text-decoration: none;
+				color: $text_on_accent;
+				position: relative;
+				padding: 10px;
+
+				&::before, &::after {
+					position: absolute;
+					left: 50%;
+					@include transform(translate(-50%, 0));
+					opacity: 0;
+				}
+
+				&::before {
+					content: "";
+					width: 0;
+					@include transition(width ease-out .5s, opacity ease-out .1s);
+				}
+
+				&::after {
+					content: "o";
+					@include transition(opacity linear .1s);
+					bottom: -2px;
+					line-height: 10px;
+					background-color: $accent_cl;
+				}
+
+				&:focus, &:hover {
+					color: $text_on_accent;
+					text-decoration: none;
+				}
+
+				&:hover {
+					&::before {
+						content: "";
+						border-bottom: 1px solid $text_on_accent;
+						width: 100%;
+						bottom: 0px;
+					}
+					
+					&::after, &::before {
+						opacity: 1;
+					}
+
+				}
+			}
+		}
+	}
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+.logo {
+	@include border-radius(100%);
+	display: block;
+	float: left;
+	margin-right: 15px;
+	margin-top: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+	max-height: 141%;
 }
 
-@media screen and (min-width: 992px) {
+.logo-wrap {
+	position: relative;
+	padding: 10px 20px 20px 130px;
+
+	a, a:hover {
+		text-decoration: none;
+		color: #fff;
+		display: block;
+	}
+	.name {
+		font: 1.8em $logo_font;
+		margin-top: 15px;
+		line-height: .8em;
+	}
+
+	.surname {
+		margin-left: 15px;
+	}
 }
 
-/*
-* Tablet
-*/
-
-@media screen and (max-width: 991px) {
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-}
-
-@media screen and (min-width: 768px) {
+@media #{$min-mobile} {
 	header ul {
 		@include transition-property(padding margin-top);
 		@include transition-duration(0.5s);
@@ -100,12 +187,8 @@
 	}
 }
 
-/*
-* Bigger phone
-*/
-
-@media (max-width: 767px) {
-	header {
+@media #{$max-mobile} {
+    header {
 		position: relative;
 		margin-bottom: 20px;
 		padding-bottom: 10px;
@@ -154,38 +237,10 @@
 			margin-left: 0;
 		}
 	}
-
-	.mobile_menu_icon {
-		float: right;
-		width: 40px;
-		height: 35px;
-		background: url('../img/mobile_nav.png') no-repeat;
-		cursor: pointer;
-	}
-
-	.site {
-		padding-top: 0;
-	}
-
-	#contact {
-		text-align: center;
-
-		h1 {
-			margin-top: 30px;
-		}
-	}
 }
 
-/*
-* Small phone
-*/
-
-@media (max-width: 480px) {
-	.big-marg-top {
-		margin-top: 35px;
-	}
-
-	header {
+@media #{$max-mobile-portrait} {
+    header {
 		padding: 0;
 		.logo {
 			display: none;
@@ -219,8 +274,4 @@
 			font-size: 26px;
 		}
 	}
-}
-
-@media (max-width: 380px) {
-
 }

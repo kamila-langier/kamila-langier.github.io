@@ -1,0 +1,18 @@
+@import "../variables";
+
+@media #{$max-mobile} {
+	
+	.mobile_menu_icon {
+		float: right;
+		width: 40px;
+		height: 35px;
+		background: url('../img/mobile_nav.png') no-repeat;
+		cursor: pointer;
+	}
+}
+
+@media #{$max-mobile-portrait} {
+	.big-marg-top {
+		margin-top: 35px;
+	}
+}

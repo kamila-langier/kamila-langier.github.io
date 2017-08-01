@@ -34,3 +34,27 @@ $container-md:                $container-desktop;
 // Large screen / wide desktop
 $container-large-desktop:     ((950px + $grid-gutter-width));
 $container-lg:                $container-large-desktop;
+
+
+// RWD
+
+$max-mobile-portrait: "only screen and (max-width : 480px)";
+$max-mobile-landscape: "only screen and (max-width : 580px)";
+$max-mobile: "only screen and (max-width : 767px)";
+
+$min-mobile-portrait: "only screen and (min-width : 480px)";
+$min-mobile-landscape: "only screen and (min-width : 580px)";
+$min-mobile: "only screen and (min-width : 768px)";
+
+
+$max-tablet-portrait: "only screen and (max-width : 960px) and (min-width : 768px)";
+$max-tablet-landscape: "only screen and (max-width : 1024px) and (min-width : 960px)";
+$min-tablet-portrait: "only screen and (min-width : 960px)";
+$max-tablet-portrait: "only screen and (max-width : 960px)";
+$min-tablet-landscape: "only screen and (min-width : 1024px)";
+$max-tablet: "only screen and (max-width : 991px)";
+
+
+$max-desktop: "only screen and (min-width : 1375px)";
+$max-desktop-max: "only screen and (max-width : 1375px)";
+$min-desktop: "only screen and (min-width : 1140px)";
