@@ -2,15 +2,26 @@
 
 .big-marg-top {
 	margin-top: 70px;
+    @media #{$max-mobile-portrait} {
+        margin-top: 35px;
+    }
 }
 
 .big-marg-bt {
 	margin-bottom: 70px;
+    @media #{$max-mobile-portrait} {
+        margin-bottom: 35px;
+    }
 }
 
 .med-marg-top {
 	margin-top: 40px;
 }
+
+.med-marg-bottom {
+	margin-bottom: 40px;
+}
+
 
 .col-title {
 	width: 30%;
@@ -30,4 +41,8 @@
 .double-col {
 	@include column-count(2);
 	@include column-gap(30px);
+}
+
+.narrower-el {
+    padding: 0 10%;
 }

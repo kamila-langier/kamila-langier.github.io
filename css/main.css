@@ -8807,35 +8807,52 @@ button.close {
 .big-marg-top {
   margin-top: 70px;
 }
+@media only screen and (max-width: 480px) {
+  /* line 3, sass/_general/_utility-class.scss */
+  .big-marg-top {
+    margin-top: 35px;
+  }
+}
 
-/* line 7, sass/_general/_utility-class.scss */
+/* line 10, sass/_general/_utility-class.scss */
 .big-marg-bt {
   margin-bottom: 70px;
 }
+@media only screen and (max-width: 480px) {
+  /* line 10, sass/_general/_utility-class.scss */
+  .big-marg-bt {
+    margin-bottom: 35px;
+  }
+}
 
-/* line 11, sass/_general/_utility-class.scss */
+/* line 17, sass/_general/_utility-class.scss */
 .med-marg-top {
   margin-top: 40px;
 }
 
-/* line 15, sass/_general/_utility-class.scss */
+/* line 21, sass/_general/_utility-class.scss */
+.med-marg-bottom {
+  margin-bottom: 40px;
+}
+
+/* line 26, sass/_general/_utility-class.scss */
 .col-title {
   width: 30%;
   float: left;
   font-weight: 400;
 }
 
-/* line 21, sass/_general/_utility-class.scss */
+/* line 32, sass/_general/_utility-class.scss */
 .col-desc {
   width: 70%;
   float: left;
 }
-/* line 25, sass/_general/_utility-class.scss */
+/* line 36, sass/_general/_utility-class.scss */
 .col-desc .no-title {
   margin-left: 30%;
 }
 
-/* line 30, sass/_general/_utility-class.scss */
+/* line 41, sass/_general/_utility-class.scss */
 .double-col {
   -moz-column-count: 2;
   -webkit-column-count: 2;
@@ -8843,6 +8860,11 @@ button.close {
   -moz-column-gap: 30px;
   -webkit-column-gap: 30px;
   column-gap: 30px;
+}
+
+/* line 46, sass/_general/_utility-class.scss */
+.narrower-el {
+  padding: 0 10%;
 }
 
 /* line 4, sass/_elements/_buttons.scss */
@@ -8995,9 +9017,10 @@ a:hover {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  line-height: 2;
 }
 
-/* line 43, sass/_site.scss */
+/* line 44, sass/_site.scss */
 ::selection {
   background-color: rgba(101, 204, 200, 0.95);
   color: #fff;
