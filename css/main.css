@@ -9464,22 +9464,57 @@ footer .container {
   margin-top: 100px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1680px) {
+  /* line 38, sass/_layout/_index.scss */
+  #contact {
+    height: 800px;
+  }
+}
+@media only screen and (max-width: 1375px) {
+  /* line 38, sass/_layout/_index.scss */
+  #contact {
+    height: 650px;
+  }
+  /* line 66, sass/_layout/_index.scss */
+  #contact h1 {
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  /* line 38, sass/_layout/_index.scss */
+  #contact {
+    height: 600px;
+    font-size: .9em;
+    line-height: 1.5;
+  }
+  /* line 76, sass/_layout/_index.scss */
+  #contact h1 {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 1070px) {
+  /* line 38, sass/_layout/_index.scss */
+  #contact {
+    height: 500px;
+  }
+}
 @media only screen and (max-width: 767px) {
   /* line 38, sass/_layout/_index.scss */
   #contact {
     text-align: center;
   }
-  /* line 63, sass/_layout/_index.scss */
+  /* line 88, sass/_layout/_index.scss */
   #contact h1 {
     margin-top: 30px;
   }
 }
 
-/* line 69, sass/_layout/_index.scss */
+/* line 94, sass/_layout/_index.scss */
 #cv {
   position: relative;
 }
-/* line 72, sass/_layout/_index.scss */
+/* line 97, sass/_layout/_index.scss */
 #cv img {
   position: absolute;
   right: 0;
@@ -9493,7 +9528,7 @@ footer .container {
 #cv p:after {
   clear: both;
 }
-/* line 81, sass/_layout/_index.scss */
+/* line 106, sass/_layout/_index.scss */
 #cv h3 {
   border-bottom: 1px solid rgba(101, 204, 200, 0.95);
   width: 50%;
@@ -9502,12 +9537,12 @@ footer .container {
   margin-top: 35px;
 }
 
-/* line 90, sass/_layout/_index.scss */
+/* line 115, sass/_layout/_index.scss */
 #about {
   font-size: 1.1em;
 }
 
-/* line 94, sass/_layout/_index.scss */
+/* line 119, sass/_layout/_index.scss */
 .project {
   position: relative;
 }
