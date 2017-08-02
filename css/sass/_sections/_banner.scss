@@ -10,15 +10,4 @@
     img {
         width: 100%; 
     }
-    
-    & + .container {
-        background: white;
-        margin-top: -250px;
-        z-index: 99999;
-        position: relative;
-        @include box-shadow(1px 1px 3px #ccc);
-        .main {
-            padding: 10px 20px;
-        }
-    }
 }

@@ -5,10 +5,25 @@
 	margin-bottom: 120px;
 	position: relative;
 	z-index: 50;
-	background: #fff;
+	background: $main_bg_cl;
     
     @media #{$max-mobile} {
         padding-top: 0;
+    }
+}
+
+
+.about-wrap {
+    background: $about_bg_cl;
+    .container {
+        background: white;
+        margin-top: -250px;
+        z-index: 99999;
+        position: relative;
+        @include box-shadow($container_text_shadow);
+        .main {
+            padding: 10px 20px;
+        }
     }
 }
 
