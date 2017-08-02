@@ -2,7 +2,7 @@
 
 .site {
 	padding-top: 150px;
-	margin-bottom: 120px;
+	margin-bottom: 80px;
 	position: relative;
 	z-index: 50;
 	background: $main_bg_cl;
@@ -35,11 +35,23 @@
 	}
 }
 
-
 #contact {
 	text-align: right;
 	padding-bottom: 30px;
-
+    background-image: url(../../../img/tablet-img.jpg);
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    background-size: 100% auto;
+    height: 1000px;
+    position: relative;
+    
+    .container {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+    }
+ 
 	h1 {
 		margin-top: $contact_h1_mt;
 		margin-bottom: $contact_h1_mt/2;
