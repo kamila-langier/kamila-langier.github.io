@@ -9374,6 +9374,24 @@ header ul li a:hover::after, header ul li a:hover::before {
   width: 100%;
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1320px) {
+  /* line 16, sass/_sections/_banner.scss */
+  .banner {
+    height: 585px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  /* line 22, sass/_sections/_banner.scss */
+  .banner {
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 28, sass/_sections/_banner.scss */
+  .banner {
+    margin-top: -30px;
+  }
+}
 /* line 3, sass/_sections/_footer.scss */
 footer {
   position: fixed;

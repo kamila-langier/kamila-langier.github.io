@@ -11,3 +11,21 @@
         width: 100%; 
     }
 }
+
+@media screen and (min-width: 1200px) and (max-width: 1320px) {
+    .banner {
+        height: 585px;
+    }
+}
+
+@media #{$max-tablet} {
+    .banner {
+        height: 500px; 
+    }
+}
+
+@media #{$max-mobile} {
+    .banner {
+        margin-top: -30px;
+    }
+}
