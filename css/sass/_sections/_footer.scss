@@ -17,4 +17,11 @@ footer {
 		padding-top: 30px;
 		padding-bottom: 25px;
 	}
+    
+    @media #{$max-mobile} {
+        text-align: center;
+        .text-right {
+            text-align: center;
+        }
+    }
 }

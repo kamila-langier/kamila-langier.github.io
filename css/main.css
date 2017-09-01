@@ -9415,6 +9415,16 @@ footer .container {
   padding-top: 30px;
   padding-bottom: 25px;
 }
+@media only screen and (max-width: 767px) {
+  /* line 3, sass/_sections/_footer.scss */
+  footer {
+    text-align: center;
+  }
+  /* line 23, sass/_sections/_footer.scss */
+  footer .text-right {
+    text-align: center;
+  }
+}
 
 /* line 3, sass/_layout/_index.scss */
 .site {
@@ -9428,6 +9438,7 @@ footer .container {
   /* line 3, sass/_layout/_index.scss */
   .site {
     padding-top: 0;
+    margin-bottom: 105px;
   }
 }
 
@@ -9448,15 +9459,22 @@ footer .container {
 .about-wrap .container .main {
   padding: 10px 20px;
 }
+@media only screen and (max-width: 767px) {
+  /* line 24, sass/_layout/_index.scss */
+  .about-wrap .container .main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 @media only screen and (max-width: 991px) {
-  /* line 32, sass/_layout/_index.scss */
+  /* line 36, sass/_layout/_index.scss */
   #home h2 {
     clear: both;
   }
 }
 
-/* line 38, sass/_layout/_index.scss */
+/* line 42, sass/_layout/_index.scss */
 #contact {
   text-align: right;
   padding-bottom: 30px;
@@ -9467,7 +9485,7 @@ footer .container {
   height: 1000px;
   position: relative;
 }
-/* line 48, sass/_layout/_index.scss */
+/* line 52, sass/_layout/_index.scss */
 #contact .container {
   position: absolute;
   top: 45%;
@@ -9477,54 +9495,54 @@ footer .container {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 55, sass/_layout/_index.scss */
+/* line 59, sass/_layout/_index.scss */
 #contact h1 {
   margin-top: 100px;
   margin-bottom: 50px;
 }
 @media screen and (max-width: 1680px) {
-  /* line 38, sass/_layout/_index.scss */
+  /* line 42, sass/_layout/_index.scss */
   #contact {
     height: 800px;
   }
 }
 @media only screen and (max-width: 1375px) {
-  /* line 38, sass/_layout/_index.scss */
+  /* line 42, sass/_layout/_index.scss */
   #contact {
     height: 650px;
   }
-  /* line 66, sass/_layout/_index.scss */
+  /* line 70, sass/_layout/_index.scss */
   #contact h1 {
     margin-top: 70px;
     margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 1250px) {
-  /* line 38, sass/_layout/_index.scss */
+  /* line 42, sass/_layout/_index.scss */
   #contact {
     height: 600px;
     font-size: .9em;
     line-height: 1.5;
   }
-  /* line 76, sass/_layout/_index.scss */
+  /* line 80, sass/_layout/_index.scss */
   #contact h1 {
     margin-top: 0px;
   }
 }
 @media screen and (max-width: 1070px) {
-  /* line 38, sass/_layout/_index.scss */
+  /* line 42, sass/_layout/_index.scss */
   #contact {
     height: 500px;
   }
 }
 @media only screen and (max-width: 960px) {
-  /* line 38, sass/_layout/_index.scss */
+  /* line 42, sass/_layout/_index.scss */
   #contact {
     height: 500px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 38, sass/_layout/_index.scss */
+  /* line 42, sass/_layout/_index.scss */
   #contact {
     text-align: center;
     background-position-y: center;
@@ -9533,21 +9551,21 @@ footer .container {
     font-size: .9em;
     height: 500px;
   }
-  /* line 96, sass/_layout/_index.scss */
+  /* line 100, sass/_layout/_index.scss */
   #contact .container {
     position: relative;
   }
-  /* line 99, sass/_layout/_index.scss */
+  /* line 103, sass/_layout/_index.scss */
   #contact h1 {
     margin-top: 80px;
   }
 }
 
-/* line 105, sass/_layout/_index.scss */
+/* line 109, sass/_layout/_index.scss */
 #cv {
   position: relative;
 }
-/* line 108, sass/_layout/_index.scss */
+/* line 112, sass/_layout/_index.scss */
 #cv img {
   position: absolute;
   right: 0;
@@ -9561,7 +9579,7 @@ footer .container {
 #cv p:after {
   clear: both;
 }
-/* line 117, sass/_layout/_index.scss */
+/* line 121, sass/_layout/_index.scss */
 #cv h3 {
   border-bottom: 1px solid rgba(101, 204, 200, 0.95);
   width: 50%;
@@ -9570,12 +9588,12 @@ footer .container {
   margin-top: 35px;
 }
 
-/* line 126, sass/_layout/_index.scss */
+/* line 130, sass/_layout/_index.scss */
 #about {
   font-size: 1.1em;
 }
 
-/* line 130, sass/_layout/_index.scss */
+/* line 134, sass/_layout/_index.scss */
 .project {
   position: relative;
 }

@@ -45,4 +45,7 @@
 
 .narrower-el {
     padding: 0 10%;
+    @media #{$max-mobile} {
+        padding: 0;
+    }
 }

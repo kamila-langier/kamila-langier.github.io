@@ -9,9 +9,9 @@
     
     @media #{$max-mobile} {
         padding-top: 0;
+        margin-bottom: 105px;
     }
 }
-
 
 .about-wrap {
     background: $about_bg_cl;
@@ -23,8 +23,12 @@
         @include box-shadow($container_text_shadow);
         .main {
             padding: 10px 20px;
+            @media #{$max-mobile} {
+                padding-left: 0;
+                padding-right: 0;
+            }
         }
-    }
+    }  
 }
 
 #home {
