@@ -1,5 +1,7 @@
 _site
 css/sass/.sass-cache
+css/.sass-cache
+css/.sass-cache/*
 
 *.swp
 *.swo
