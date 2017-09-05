@@ -8866,6 +8866,12 @@ button.close {
 .narrower-el {
   padding: 0 10%;
 }
+@media only screen and (max-width: 767px) {
+  /* line 46, sass/_general/_utility-class.scss */
+  .narrower-el {
+    padding: 0;
+  }
+}
 
 /* line 4, sass/_elements/_buttons.scss */
 .btn:focus {
@@ -9558,14 +9564,24 @@ footer .container {
   /* line 103, sass/_layout/_index.scss */
   #contact h1 {
     margin-top: 80px;
+    margin-bottom: 20px;
+  }
+  /* line 107, sass/_layout/_index.scss */
+  #contact h2 {
+    font-size: 2em;
+  }
+  /* line 110, sass/_layout/_index.scss */
+  #contact h3 {
+    margin-top: 0;
+    font-size: 1.5em;
   }
 }
 
-/* line 109, sass/_layout/_index.scss */
+/* line 117, sass/_layout/_index.scss */
 #cv {
   position: relative;
 }
-/* line 112, sass/_layout/_index.scss */
+/* line 120, sass/_layout/_index.scss */
 #cv img {
   position: absolute;
   right: 0;
@@ -9579,7 +9595,7 @@ footer .container {
 #cv p:after {
   clear: both;
 }
-/* line 121, sass/_layout/_index.scss */
+/* line 129, sass/_layout/_index.scss */
 #cv h3 {
   border-bottom: 1px solid rgba(101, 204, 200, 0.95);
   width: 50%;
@@ -9588,12 +9604,12 @@ footer .container {
   margin-top: 35px;
 }
 
-/* line 130, sass/_layout/_index.scss */
+/* line 138, sass/_layout/_index.scss */
 #about {
   font-size: 1.1em;
 }
 
-/* line 134, sass/_layout/_index.scss */
+/* line 142, sass/_layout/_index.scss */
 .project {
   position: relative;
 }
